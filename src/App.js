@@ -63,8 +63,14 @@ import './App.css';
   }
 } */
 
+const calcValue = () => {
+  console.log('random');
+
+  return Math.floor(Math.random() * 10);
+};
+
 const Slider = (props) => {
-  const [slide, setSlide] = useState(0);
+  const [slide, setSlide] = useState(calcValue);
   const [autoplay, setAutoplay] = useState(false);
 
   const changeSlide = (i) => {
