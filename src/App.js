@@ -114,8 +114,6 @@ const Slider = (props) => {
   );
 };
 
-function App() {
+export const App = () => {
   return <Slider />;
-}
-
-export default App;
+};
