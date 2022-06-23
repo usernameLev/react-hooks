@@ -1,6 +1,8 @@
 import { Component, useState } from 'react';
 import { Container } from 'react-bootstrap';
 
+import { UseEffect } from './UseEffect';
+
 import './App.css';
 
 /* class Slider extends Component {
@@ -110,10 +112,18 @@ const Slider = (props) => {
           </button>
         </div>
       </div>
+
+      <UseEffect />
     </Container>
   );
 };
 
 export const App = () => {
-  return <Slider />;
+  const [slider, setSlider] = useState(true);
+  return (
+    <>
+      <button onClick={() => setSlider(false)}>Click</button>
+      {slider ? <Slider /> : null}
+    </>
+  );
 };
