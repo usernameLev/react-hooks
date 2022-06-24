@@ -1,9 +1,8 @@
 import { Container } from 'react-bootstrap';
 
-import { UseCallback } from './UseCallback';
 
 import './App.css';
-import { UseMemo } from './UseMemo';
+import { UseRef } from './UseRef';
 
 export const App = (props) => {
   return (
@@ -14,7 +13,9 @@ export const App = (props) => {
 
       {/* <UseCallback /> */}
 
-      <UseMemo />
+      {/* <UseMemo /> */}
+
+      <UseRef />
     </Container>
   );
 };
