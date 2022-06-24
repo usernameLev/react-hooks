@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import { UseCallback } from './UseCallback';
 
 import './App.css';
+import { UseMemo } from './UseMemo';
 
 export const App = (props) => {
   return (
@@ -11,7 +12,9 @@ export const App = (props) => {
 
       {/* <UseEffect /> */}
 
-      <UseCallback />
+      {/* <UseCallback /> */}
+
+      <UseMemo />
     </Container>
   );
 };
